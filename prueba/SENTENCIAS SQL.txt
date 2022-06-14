@@ -1,0 +1,9 @@
+SENTENCIAS SQL
+-------
+ORDERNAR POR STOCK
+SELECT SQL_CALC_FOUND_ROWS * FROM productos ORDER BY producto_stock DESC
+
+-------
+ORDENAR POR MAS VENDIDOS
+SELECT productos.* FROM productos LEFT JOIN ventas ON productos.producto_id = ventas.ventas_idproducto GROUP BY productos.producto_nombre
+-------
